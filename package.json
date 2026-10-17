@@ -11,6 +11,10 @@
     "build": "tsc",
     "start": "node dist/cli/index.js",
     "render": "npm run build && node dist/cli/index.js render",
+    "preview": "npm run build && node dist/cli/index.js preview",
+    "check": "npm run build && node dist/cli/index.js check",
+    "doctor": "npm run build && node dist/cli/index.js doctor",
+    "themes": "npm run build && node dist/cli/index.js themes",
     "test": "npm run build && node --test tests/integration.mjs"
   },
   "dependencies": {

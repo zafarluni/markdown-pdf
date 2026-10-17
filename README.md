@@ -23,11 +23,22 @@ The **Chromium engine** uses Playwright's Chromium or a locally installed Chrome
 Run commands from the directory containing your notes. Replace `path/to/markdown-pdf` with this project's location.
 
 ```powershell
-node path/to/markdown-pdf/dist/cli/index.js render notes.md --output notes.pdf
-node path/to/markdown-pdf/dist/cli/index.js render ./notes --combined --toc --output revision-book.pdf
-node path/to/markdown-pdf/dist/cli/index.js preview notes.md
-node path/to/markdown-pdf/dist/cli/index.js check ./notes
+npm run render -- notes.md --output notes.pdf
+npm run render -- ./notes --combined --toc --output revision-book.pdf
+npm run preview -- notes.md
+npm run check -- ./notes
 ```
+
+The `--` separates npm's arguments from mdpdf's arguments. You can also use
+`npm start -- <command>` when you want to call the CLI directly:
+
+```powershell
+npm start -- render notes.md --output notes.pdf
+npm start -- preview notes.md
+```
+
+For setup and diagnostics, use `npm run doctor` and `npm run themes`. Run
+`npm run build` when you only want to compile the application.
 
 Every command includes focused terminal help. Run `mdpdf --help` for a quick
 overview, or `mdpdf render --help` / `mdpdf preview --help` for all options,
