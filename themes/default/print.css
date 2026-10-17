@@ -1,0 +1,17 @@
+@media print {
+  html, body { background: white; max-width: none; }
+  body { margin: 0; }
+  .running-header, .running-footer { display: none; }
+  .heading-lead { break-inside: avoid; page-break-inside: avoid; }
+  .section-short { break-inside: avoid; page-break-inside: avoid; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; page-break-after: avoid; }
+  h1 + *, h2 + *, h3 + *, h4 + *, h5 + *, h6 + * { break-before: avoid-page; }
+  p, li, blockquote { orphans: 3; widows: 3; }
+  li, table, .figure, p:has(> img:only-child) { break-inside: avoid; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tfoot { display: table-footer-group; }
+  tr { break-inside: avoid; page-break-inside: avoid; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+  img { max-height: 230mm; object-fit: contain; }
+  .page-break-before { break-before: page; page-break-before: always; }
+}

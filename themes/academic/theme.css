@@ -1,0 +1,40 @@
+:root {
+  --ink: #20242b;
+  --muted: #68717c;
+  --accent: #315b7d;
+  --accent-dark: #1e3d58;
+  --line: #cfd7de;
+  --soft: #f3f5f6;
+  --paper: #fff;
+}
+
+* { box-sizing: border-box; }
+html { background: #e7eaec; }
+body {
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11pt;
+  line-height: 1.58;
+  max-width: 210mm;
+  margin: 0 auto;
+}
+main { padding: 0; }
+h1, h2, h3, h4 { color: var(--accent-dark); line-height: 1.2; font-weight: 600; }
+h1 { font-size: 25pt; border-bottom: 2px solid var(--accent); padding-bottom: .2em; margin: 1.1em 0 .55em; }
+h2 { font-size: 17pt; border-bottom: 1px solid var(--line); padding-bottom: .14em; margin: 1.25em 0 .45em; }
+h3 { font-size: 13pt; margin: 1.15em 0 .35em; }
+h4 { font-size: 11pt; margin: 1em 0 .25em; }
+p { margin: .65em 0; }
+strong { color: var(--accent-dark); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.5em 0; }
+a { color: var(--accent); }
+ul, ol { padding-left: 1.6em; }
+blockquote { margin: 1em 1.5em; padding: .35em 1em; border-left: 3px solid var(--accent); color: #4e5862; }
+code, pre { font-family: "Cascadia Mono", Consolas, monospace; }
+code { color: #6c3d5f; background: #f5f0f4; padding: .08em .25em; }
+pre { background: var(--soft); border: 1px solid var(--line); padding: .8em 1em; overflow: hidden; line-height: 1.35; }
+table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 10pt; }
+th { background: var(--accent-dark); color: white; text-align: left; }
+th, td { border: 1px solid var(--line); padding: .42em .58em; vertical-align: top; }
+img { max-width: 100%; height: auto; }

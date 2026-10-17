@@ -1,0 +1,32 @@
+{
+  "name": "markdown-pdf",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Generic, print-quality Markdown to PDF renderer",
+  "type": "module",
+  "bin": {
+    "mdpdf": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli/index.js",
+    "render": "npm run build && node dist/cli/index.js render",
+    "test": "npm run build && node --test tests/integration.mjs"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "highlight.js": "^11.12.0",
+    "katex": "^0.19.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "playwright": "^1.49.1",
+    "yaml": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.10.1",
+    "pdfjs-dist": "^6.4.299",
+    "typescript": "^5.7.2"
+  }
+}

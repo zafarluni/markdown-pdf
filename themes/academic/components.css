@@ -1,0 +1,9 @@
+.figure { margin: 1.2em auto; text-align: center; }
+.figure img { max-height: 105mm; }
+.figure figcaption { color: var(--muted); font-size: 9pt; font-style: italic; margin-top: .35em; }
+.section { position: relative; }
+.section-level-1 { margin-top: 1.2em; }
+.running-header, .running-footer { color: var(--muted); font-size: 8pt; display: flex; justify-content: space-between; }
+.running-header { border-bottom: 1px solid var(--line); padding-bottom: 5px; margin-bottom: 7mm; }
+.running-footer { border-top: 1px solid var(--line); padding-top: 5px; margin-top: 7mm; }
+.page-number::after { content: counter(page); }
